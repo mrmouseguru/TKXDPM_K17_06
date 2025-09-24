@@ -13,8 +13,10 @@ public class AppNhan2So {
 		out = new OutputWrapperImpl(pwt);//sai
 		in = new InputWrapperImpl(sc);
 		
-		Nhan2So n2So = new Nhan2So(out, in);
-		n2So.nhan2So();
+		Nhan2So n2So = new Nhan2So();
+		
+		Nhan2SoControl n2soControl = new Nhan2SoControl(in, out, n2So);
+		n2soControl.execute();
 	}
 
 }

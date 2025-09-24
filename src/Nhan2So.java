@@ -1,24 +1,26 @@
 
 public class Nhan2So {
-	private OutputInterface out;
-	private InputInterface in;
+	private int num1;
+	private int num2;
 	
-	
+	public Nhan2So() {
+		
+	}
 
-	public Nhan2So(OutputInterface out, InputInterface in) {
-		this.out = out;
-		this.in = in;
+	public Nhan2So(int num1, int num2) {
+		this.num1 = num1;
+		this.num2 = num2;
 	}
 
 
 
-	void nhan2So() {
-		out.show("[CHO EM XIN SỐ]:");
-		int number1 = in.getNumber();
-		out.show("[CHO EM XIN SỐ]:");
-		int number2 = in.getNumber();
-		double result = number1 * number2;
-		
-		out.show("Result: " + String.valueOf(result));
+	int nhan2So() {
+		return num1 * num2;
+
+	}
+	
+	int nhan2So(int num1, int num2) {
+		return num1 * num2;
+
 	}
 }
