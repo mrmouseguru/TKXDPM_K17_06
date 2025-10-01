@@ -12,7 +12,9 @@ public class AppNhan2So {
 		PrintWriter pwt = new PrintWriter(System.out);
 		
 		out = new OutputWrapperImpl(pwt);//sai
-		in = new UIConsoleWrapperImpl(sc, pwt );
+		//in = new UIConsoleWrapperImpl(sc, pwt );
+		//Graphical user interface
+		in = new GUIImpl();
 		
 		Nhan2So n2So = new Nhan2So();
 		
