@@ -1,3 +1,4 @@
+
 import java.io.PrintWriter;
 import java.util.Scanner;
 
@@ -11,11 +12,12 @@ public class AppNhan2So {
 		PrintWriter pwt = new PrintWriter(System.out);
 		
 		out = new OutputWrapperImpl(pwt);//sai
-		in = new InputWrapperImpl(sc);
+		in = new UIConsoleWrapperImpl(sc, pwt );
 		
 		Nhan2So n2So = new Nhan2So();
 		
-		Nhan2SoControl n2soControl = new Nhan2SoControl(in, out, n2So);
+		Nhan2SoControl n2soControl = 
+				new Nhan2SoControl(in, out, n2So);
 		n2soControl.execute();
 	}
 

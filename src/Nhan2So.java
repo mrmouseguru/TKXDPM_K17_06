@@ -1,4 +1,5 @@
 
+
 public class Nhan2So {
 	private int num1;
 	private int num2;
