@@ -11,7 +11,8 @@ public class AppNhan2So {
 		Scanner sc = new Scanner(System.in);
 		PrintWriter pwt = new PrintWriter(System.out);
 		
-		out = new OutputWrapperImpl(pwt);//sai
+		//out = new UIConsoleResultImpl(pwt);//sai
+		out = new GUIResultImpl();
 		//in = new UIConsoleWrapperImpl(sc, pwt );
 		//Graphical user interface
 		in = new GUIImpl();

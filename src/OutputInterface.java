@@ -1,6 +1,6 @@
 
 
 public interface OutputInterface {
-	void show(String str);
+	void show(OutputData outData);
 
 }

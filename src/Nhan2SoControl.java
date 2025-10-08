@@ -17,7 +17,10 @@ public class Nhan2SoControl {
 	public void execute() {
 		InputData inData = in.getNumber();
 		int result = n2so.nhan2So(inData.num1, inData.num2);
-		out.show("Result: " + String.valueOf(result));
+		OutputData outData = new OutputData();
+		outData.result = result;
+		
+		out.show(outData);
 	}
 	
 	
